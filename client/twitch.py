@@ -1,9 +1,4 @@
 # Copyright (C) Matthew Fosse
-
-
-
-
-# win32
 import msvcrt
 import win32api
 import win32con
@@ -11,34 +6,21 @@ import win32com
 import win32com.client
 import win32gui
 import win32ui
-
-# socket.io
 from socketIO_client import SocketIO, LoggingNamespace
-
-# pillow
 import PIL
 from PIL import Image, ImageDraw, ImageFont
 from PIL import ImageGrab
-
-# image utils
 import base64
 from io import StringIO
 from io import BytesIO
-
-# misc
 import time
 import random
-
-# mouse and keyboard
 import pyautogui
-
 
 screenWidth, screenHeight = pyautogui.size()
 
 #import keyboard
 #from keyboard import keyPoller
-
-
 
 socketIO = SocketIO('fosse.co/8100/', 80, LoggingNamespace)
 moveList = {}
